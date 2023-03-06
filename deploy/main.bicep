@@ -65,7 +65,7 @@ resource appServiceApp 'Microsoft.Web/sites@2021-01-15' = {
     serverFarmId: appServicePlan.id
     httpsOnly: true
     siteConfig: {
-      linuxFxVersion: 'node|14-lts'
+      linuxFxVersion: appServiceAppLinuxFrameworkVersion
     }
   }
 }
